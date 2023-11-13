@@ -24,8 +24,10 @@
             display: Fixed;
             bottom: 0px;
         }
+
         .container{
             width: 1200px;
+            margin: auto;
         }
         
         .path {
@@ -36,8 +38,56 @@
         .path il+il::before{
             content: '/ ';
         }
+        .main{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
 
+        }
+        .container .main .item-title h2{
+            font-size: 32px;
+            margin-bottom: 100px;
+        }
+        .container .main .item{
+            width: 800px;
+            display: flex;
+            flex-direction: column;
+        }
+        .container .main .item .pic img{
+            width: 230px;
+        }
+        .container .main .item .pic{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 50px;
 
+        }
+        .container .main .item .pic p{
+            font-size: 28px;
+            width: 350px;
+            display: flex;
+            align-items: center;
+        }
+        .wrap .item{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 50px;
+
+        }
+        .wrap .item-title h2{
+            font-size: 32px;  /*3號字*/
+            margin-bottom: 50px;
+            text-align: center;
+        }
+
+        .wrap .item .product img{
+            width: 250px;
+        }
+        .wrap .item .product p{
+            font-size: 20px;  /*6號字*/
+            text-align: center;
+        }
+        
     </style>
 
 </head>
@@ -52,12 +102,57 @@
         <ul>
             <il>首頁</il>
             <il>最新消息</il>
+            <il>優惠資訊</il>
         </ul>
     </div>
 
     <div class="container">
+        <div class="main">
+            <div class="item-title">
+                <h2>優惠資訊</h2>
+            </div>
+            <div class="item">
 
-    
+                <div class= "pic">
+                    <img src="pic/會員專屬.png" alt="會員專屬優惠">
+                    <p>加入 MeowMaster</br>快速掌握最新消息</br>不定期推出會員限定的</br>專屬回饋活動</p>
+                </div>
+                <div class= "pic">
+                    <img src="pic/首購優惠.png" alt="首購優惠">
+                    <p>首次購買即享100元折價券</br>給 MeowMaster 一個機會吧!</p>
+                </div>
+                <div class= "pic">
+                    <img src="pic/全館9折.png" alt="分店開幕優惠">
+                    <p>全館9折!!!還不快逛起來!!!</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="wrap">
+            <div class="item-title">
+                <h2>熱門商品</h2>
+            </div>
+
+            <div class="item">
+                <div class="product">
+                    <img src="pic/貓咪罐罐_雞肉.jpg" alt="雞肉補水主食罐">
+                    <p>雞肉補水主食罐</br>NT $55</p>
+                </div>
+                <div class="product">
+                    <img src="pic/貓咪罐罐_鮭魚.jpg" alt="分店開幕優惠">
+                    <p>鮭魚補水主食罐</br>NT $55</p>
+                </div>
+                <div class="product">
+                    <img src="pic/貓咪罐罐_鯖魚.jpg" alt="鯖魚補水主食罐">
+                    <p>鯖魚補水主食罐</br>NT $55</p>
+                </div>
+                <div class="product">
+                    <img src="pic/貓咪罐罐_鱈魚.jpg" alt="分店開幕優惠">
+                    <p>鱈魚補水主食罐</br>NT $55</p>
+                </div>
+            </div>
+
+        </div>
     </div>
 
 
