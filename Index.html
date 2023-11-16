@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Meow Master</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Meow Master</h1>
+    </header>
+    <main>
+        <div class="row">
+            <section class="product">
+                <img class="product-image" src="images/鮭魚蘆筍鮮食餐.png" alt="Product 1">
+                <h2>鮭魚蘆筍鮮食餐</h2>
+                <p>香煎鮭魚風味濃厚，新鮮蘆筍富含營養</p>
+                <p>Price: $20.00</p>
+                <button onclick="addToCart('Product 1', 20.00)">Add to Cart</button>
+            </section>
+    
+            <section class="product">
+                <img class="product-image" src="product2.jpg" alt="Product 2">
+                <h2>Product 2</h2>
+                <p>Description of Product 2.</p>
+                <p>Price: $25.00</p>
+                <button onclick="addToCart('Product 2', 25.00)">Add to Cart</button>
+            </section>
+    
+            <section class="product">
+                <img class="product-image" src="product3.jpg" alt="Product 3">
+                <h2>Product 3</h2>
+                <p>Description of Product 3.</p>
+                <p>Price: $30.00</p>
+                <button onclick="addToCart('Product 3', 30.00)">Add to Cart</button>
+            </section>
+    
+            <section class="product">
+                <img class="product-image" src="product4.jpg" alt="Product 4">
+                <h2>Product 4</h2>
+                <p>Description of Product 4.</p>
+                <p>Price: $35.00</p>
+                <button onclick="addToCart('Product 4', 35.00)">Add to Cart</button>
+            </section>
+        </div>
+    
+        <div class="row">
+            <section class="product">
+                <img class="product-image" src="product1.jpg" alt="Product 1">
+                <h2>Product 1</h2>
+                <p>Description of Product 1.</p>
+                <p>Price: $20.00</p>
+                <button onclick="addToCart('Product 1', 20.00)">Add to Cart</button>
+            </section>
+    
+            <section class="product">
+                <img class="product-image" src="product2.jpg" alt="Product 2">
+                <h2>Product 2</h2>
+                <p>Description of Product 2.</p>
+                <p>Price: $25.00</p>
+                <button onclick="addToCart('Product 2', 25.00)">Add to Cart</button>
+            </section>
+    
+            <section class="product">
+                <img class="product-image" src="product3.jpg" alt="Product 3">
+                <h2>Product 3</h2>
+                <p>Description of Product 3.</p>
+                <p>Price: $30.00</p>
+                <button onclick="addToCart('Product 3', 30.00)">Add to Cart</button>
+            </section>
+    
+            <section class="product">
+                <img class="product-image" src="product4.jpg" alt="Product 4">
+                <h2>Product 4</h2>
+                <p>Description of Product 4.</p>
+                <p>Price: $35.00</p>
+                <button onclick="addToCart('Product 4', 35.00)">Add to Cart</button>
+            </section>
+        </div>
+    </main>
+    <aside>
+        <h2>Shopping Cart</h2>
+        <ul id="cart">
+            <!-- Items added to the cart will appear here -->
+        </ul>
+        <p>Total: <span id="total">$0.00</span></p>
+    </aside>
+    <script src="script.js"></script>
+</body>
+</html>
