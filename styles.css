@@ -82,7 +82,7 @@ nav a + a::before{
     padding: 10px;
     margin: 10px;
     background-color: #fff;
-    text-align: center;
+    text-align: left;
     width: 22%; /* Adjust as needed */
     border-radius: 12.5px;
     border: 1px
