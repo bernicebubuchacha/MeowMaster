@@ -36,15 +36,34 @@ main {
 }
 
 .wrap{
-    width: 100%;
+    width: 1200px;
     height: 100vh;
     display: flex;
     align-items: center;
 }
 
-.leftContainer{
+.sideMenu{
     width: 300px;
+    height: 100%;
     margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+nav a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    position: relative;
+}
+
+nav a + a::before{
+    content: '';
+    position: absolute;
+    border-top: 1px solid;
+    left: 10px;
+    right: 10px;
+    top: 0;
 }
 
 .container{
@@ -65,6 +84,8 @@ main {
     background-color: #fff;
     text-align: center;
     width: 22%; /* Adjust as needed */
+    border-radius: 12.5px;
+    border: 1px
 }
 
 .product-image {
@@ -76,6 +97,7 @@ button {
     background-color: #333;
     color: #fff;
     border: none;
+    border-radius: 12.5px;
     padding: 5px 10px;
     cursor: pointer;
 }
