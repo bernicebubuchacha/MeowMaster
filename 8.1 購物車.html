@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles1.css">
     <title>E-commerce Checkout</title>
     <style>
         body {
@@ -68,21 +69,49 @@
     </style>
 </head>
 <body>
-    <header>
-        <h1>Checkout Page</h1>
-    </header>
+    <div class="header">
+        <!-- 放Banner -->
+    </div>
+
+    <div>
+        <ul class="list">
+            <li>
+                確認品項
+            </li>
+            <li>
+                填寫資料
+            </li>
+            <li>
+                付款方式
+            </li>
+            <li>
+                確認訂單
+            </li>
+            <li>
+                完成訂單
+            </li>
+        </ul>
+    </div>
+    
 
     <div class="container">
         <form id="checkoutForm" onsubmit="return validateForm()">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required>
+            <div>
+                <h2>收件人資訊</h2>
+                <div class="Name">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="Phone">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
 
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
 
             <label for="address">Address</label>
             <input type="text" id="address" name="address" required>
-
+            </div>
+            
             <label for="card">Credit Card</label>
             <input type="text" id="card" name="card" required>
 
@@ -120,5 +149,9 @@
             return true;
         }
     </script>
+
+<div class="footer">
+    <!-- 放Footer -->
+</div>
 </body>
 </html>
