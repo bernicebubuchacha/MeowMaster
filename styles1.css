@@ -12,6 +12,14 @@ body {
     margin-bottom: 150px;
 }
 
+label{
+    display: inline-block;
+}
+
+.form-label{
+    margin-bottom: 8px;
+}
+
 .list{
     display:flex;
     justify-content: center;
@@ -168,4 +176,14 @@ h2 {
 
 #total {
     font-weight: bold;
+}
+
+h2{
+    margin-bottom: 16px;
+    font-size: 24;
+}
+
+.text-danger {
+    --bs-text-opacity: 1;
+    color: red;
 }
