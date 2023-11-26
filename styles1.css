@@ -107,12 +107,22 @@ nav a + a::before{
     margin: auto;
 }
 
+.firstRow{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
 .Name{
-    width: 150px;
+    width: 30%;
 }
 
 .Phone{
-    width: 150px;
+    width: 30%;
+}
+
+.Email{
+    width: 30%;
 }
 
 .row {
