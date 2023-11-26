@@ -12,6 +12,15 @@ body {
     margin-bottom: 150px;
 }
 
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
 label{
     display: inline-block;
 }
@@ -108,11 +117,6 @@ nav a + a::before{
     left: 10px;
     right: 10px;
     top: 0;
-}
-
-.container{
-    width: 1200px;
-    margin: auto;
 }
 
 .firstRow{

@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles1.css">
-    <title>E-commerce Checkout</title>
+    <link rel="stylesheet" href="8-2 styles.css">
+    <title>Checkout</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -18,15 +18,6 @@
             color: #fff;
             text-align: center;
             padding: 1em;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
         }
 
         form {
@@ -68,51 +59,53 @@
     <div class="header">
         <!-- 放Banner -->
     </div>
-
-    <div>
-        <ul class="list">
-            <li>
-                確認品項
-            </li>
-            <li>
-                填寫資料
-            </li>
-            <li>
-                付款方式
-            </li>
-            <li>
-                確認訂單
-            </li>
-            <li>
-                完成訂單
-            </li>
-        </ul>
-    </div>
-    
+    <main>
+        <div class="wrap">
+            <ul class="list">
+                <li>
+                    確認品項
+                </li>
+                <li>
+                    填寫資料
+                </li>
+                <li>
+                    付款方式
+                </li>
+                <li>
+                    確認訂單
+                </li>
+                <li>
+                    完成訂單
+                </li>
+            </ul>
+        </div>
+    </main>
 
     <div class="container">
-        <form id="checkoutForm" onsubmit="return validateForm()">
-            <div>
-                <h2>收件人資訊</h2>
-                <div class="firstRow">
-                    <div class="Name">
-                        <label for="name" class= "form-label">收件人姓名</label>
-                        <span class="text-danger">*</span>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="Phone">
-                        <label for="phone" class= "form-label">收件人電話</label>
-                        <span class="text-danger">*</span>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="Email">
-                        <label for="email" class= "form-label">收件人信箱</label>
-                        <span class="text-danger">*</span>
-                        <input type="text" id="email" name="email" required>
+        <div>
+            <form id="checkoutForm" onsubmit="return validateForm()">
+                <div>
+                    <h2>收件人資訊</h2>
+                    <div class="firstRow">
+                        <div class="Name">
+                            <label for="name" class= "form-label">收件人姓名</label>
+                            <span class="text-danger">*</span>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="Phone">
+                            <label for="phone" class= "form-label">收件人電話</label>
+                            <span class="text-danger">*</span>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="Email">
+                            <label for="email" class= "form-label">收件人信箱</label>
+                            <span class="text-danger">*</span>
+                            <input type="text" id="email" name="email" required>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </form>
+            </form>
+        </div>
     </div>
     <div class="container">
         <form id="checkoutForm" onsubmit="return validateForm()">
