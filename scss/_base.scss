@@ -16,14 +16,14 @@ a:hover{
     background: #77836b;
     color: $gray-100;
 }
-// .frame{
-//     margin: 100px 300px;
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//     @media (max-width:767px) {
-//         margin: 0 100px;
-//         white-space: nowrap;
-//         word-break: break-all;
-//     }
-// }
+.frame{
+    margin: 100px 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media (max-width:767px) {
+        margin: 0 100px;
+        white-space: nowrap;
+        word-break: break-all;
+    }
+}

@@ -10169,6 +10169,20 @@ a:hover {
   color: #fcfcfc;
 }
 
+.frame {
+  margin: 100px 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  .frame {
+    margin: 0 100px;
+    white-space: nowrap;
+    word-break: break-all;
+  }
+}
+
 .wrap {
   width: 1200px;
   margin: 0 auto;
@@ -10310,7 +10324,7 @@ a:hover {
     padding: 5px 0;
   }
 }
-.forgetPassword-content {
+.forgetpassword-content {
   margin: 0 300px;
 }
 
@@ -10341,7 +10355,7 @@ a:hover {
     font-size: 1.5rem;
     margin-bottom: 1rem;
   }
-  .forgetPassword-content {
+  .forgetpassword-content {
     margin: 0 100px;
   }
 }
