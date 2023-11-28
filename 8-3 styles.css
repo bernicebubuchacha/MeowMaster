@@ -12,10 +12,6 @@ body {
     margin-bottom: 150px;
 }
 
-.wrap{
-    text-align: center;
-}
-
 .container {
     max-width: 800px;
     margin: 20px auto;
@@ -93,12 +89,12 @@ main {
     justify-content: space-around;
 }
 
-.bottomWrap{
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
+.wrap{
+    width: 1200px;
+    /* height: 100vh; */
+    display: flex;
+    align-items: center;
     justify-content: center;
-    text-align: right;
 }
 
 .sideMenu{
@@ -180,7 +176,6 @@ nav a + a::before{
 }
 
 button {
-    width: 150px;
     background-color: #333;
     color: #fff;
     border: none;

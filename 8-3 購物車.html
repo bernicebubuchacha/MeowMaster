@@ -80,6 +80,7 @@
             </ul>
         </div>
     </main>
+
     <div class="container">
         <div>
             <form id="checkoutForm" onsubmit="return validateForm()">
@@ -128,13 +129,18 @@
                     <input type="text" id="card" name="card" required>
                 </div>
             </div>
-            <div class="error-message" id="errorMessage"></div>
-            
+                
+                
+                    <label for="expiry">Expiration Date</label>
+                    <input type="text" id="expiry" name="expiry" placeholder="MM/YY" required>
+
+                    <label for="cvv">CVV</label>
+                    <input type="text" id="cvv" name="cvv" required>
+
+                    <div class="error-message" id="errorMessage"></div>
+
+                    <button type="submit">Place Order</button>
         </form>
-    </div>
-    <div class="bottomWrap">
-    <button type="submit">上一步</button>
-    <button type="submit">下一步</button>
     </div>
 
     <script>
