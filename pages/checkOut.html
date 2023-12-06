@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="8-2 styles.css">
+    <link rel="stylesheet" href="/Users/fletcherwu/MeowMaster/css/8-2 styles.css">
     <title>Checkout</title>
     <style>
         body {
@@ -82,55 +82,71 @@
     </main>
     <div class="container">
         <div>
-            <form id="checkoutForm" onsubmit="return validateForm()">
+            <form id="checkoutForm1" onsubmit="saveAndRedirect(); return false;">
                 <div>
                     <h2>收件人資訊</h2>
                     <div class="firstRow">
                         <div class="Name">
-                            <label for="name" class= "form-label">收件人姓名</label>
+                            <label for="name">收件人姓名</label>
                             <span class="text-danger">*</span>
-                            <input type="text" id="name" name="name" required>
+                            <input type="text" id="name" required>
                         </div>
                         <div class="Phone">
-                            <label for="phone" class= "form-label">收件人電話</label>
+                            <label for="phone">收件人電話</label>
                             <span class="text-danger">*</span>
-                            <input type="text" id="name" name="name" required>
+                            <input type="tel" id="phone" required>
                         </div>
                         <div class="Email">
-                            <label for="email" class= "form-label">收件人信箱</label>
+                            <label for="email">收件人信箱</label>
                             <span class="text-danger">*</span>
-                            <input type="text" id="email" name="email" required>
+                            <input type="email" id="email" required>
                         </div>
                     </div>
                 </div>
+                <script src="/Users/fletcherwu/MeowMaster/checkOut.js"></script>
+                <button type="submit" >Submit</button>
             </form>
         </div>
     </div>
     <div class="container">
-        <form id="checkoutForm" onsubmit="return validateForm()">
+        <form id="checkoutForm2" onsubmit="saveAndRedirect()">
             <div>
                 <h2>配送地址</h2>
                 <div class="SecondRow">
                     <div class="City">
-                        <label for="address" class= "form-label">縣/市</label>
+                        <label for="city" class= "form-label">縣/市</label>
                         <span class="text-danger">*</span>
-                        <input type="text" id="address" name="address" required>
+                        <input type="text" id="city" name="city" required>
                     </div>
                     <div class="District">
-                        <label for="address" class= "form-label">鄉鎮市區</label>
+                        <label for="district" class= "form-label">鄉鎮市區</label>
                         <span class="text-danger">*</span>
-                        <input type="text" id="address" name="address" required>
+                        <input type="text" id="district" name="district" required>
                     </div>
                 </div>
                 <div class="Street">
-                    <label for="card" class= "form-label">街道地址</label>
+                    <label for="street" class= "form-label">街道地址</label>
                     <span class="text-danger">*</span>
-                    <input type="text" id="card" name="card" required>
+                    <input type="text" id="street" name="street" required>
                 </div>
             </div>
             <div class="error-message" id="errorMessage"></div>
-            
+            <button type="submit">上一步</button>
+            <button type="button" onclick="validateForm()">Submit</button>
         </form>
+    </div>
+    <div class="container">
+        <div>
+            <form id="checkoutForm3" onsubmit="saveAndRedirect()">
+                <div>
+                    <h2>付款方式</h2>
+                    <div>
+                        <div>貨到付款</div>
+                        <div>收貨時以現金付款給黑貓送貨大哥就可以囉！請確認電話、地址與到貨時段是否填寫正確</div>
+                    </div>
+                </div>
+            </form>
+        </div>
     </div>
 
     <div class="cartWrap">
@@ -199,34 +215,12 @@
     <button type="submit">上一步</button>
     <button type="submit">下一步</button>
     </div>
+    
+    
 
-
-
-    <script>
-        function validateForm() {
-            var name = document.getElementById('name').value;
-            var email = document.getElementById('email').value;
-            var address = document.getElementById('address').value;
-            var card = document.getElementById('card').value;
-            var expiry = document.getElementById('expiry').value;
-            var cvv = document.getElementById('cvv').value;
-
-            var errorMessage = document.getElementById('errorMessage');
-            errorMessage.innerHTML = '';
-
-            if (!name || !email || !address || !card || !expiry || !cvv) {
-                errorMessage.innerHTML = 'All fields are required.';
-                return false;
-            }
-
-            // Add more complex validation logic here if needed
-
-            return true;
-        }
-    </script>
-
-<div class="footer">
+    <div class="footer">
     <!-- 放Footer -->
-</div>
+    </div>
+   
 </body>
 </html>
