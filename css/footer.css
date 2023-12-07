@@ -49,8 +49,8 @@ footer#norepeat2 section img{
     vertical-align: middle;
 }
 footer#norepeat2 a>p, footer#norepeat2 address>p{
-    text-align: left !important
+    text-align: left !important;
 }
-footer#norepeat2 address{
+footer#norepeat2 address>p{
     font-style: normal;
 }
