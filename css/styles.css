@@ -90,7 +90,7 @@ nav a {
     position: relative;
 }
 
-nav a + a::before{
+nav.navigation a + a::before{
     content: '';
     position: absolute;
     border-top: 1px solid;
