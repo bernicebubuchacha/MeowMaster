@@ -74,12 +74,21 @@
     },
     {
       "email": "eeee@mail.com",
-      "password": "$2a$10$TslnBGQiDEna62zVyzzUxuU7M6z.UYhMJQfpWlh1SbBI5r.M2asHO",
+      "password": "$2a$10$TFAJL1nB30EgXtWsYLFBPuURPBGV.hem8ZhzggfMMp3YpH091ssyO",
       "name": "eeee",
       "year": "1992",
       "month": "1",
       "day": "1",
       "id": 9
+    }
+  ],
+  "posts": [
+    {
+      "name": "",
+      "email": "",
+      "phone": "",
+      "birthday": "",
+      "address": ""
     }
   ]
 }
