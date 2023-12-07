@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="8-2 styles.css">
+    <link rel="stylesheet" href="/Users/fletcherwu/MeowMaster/css/8-2 styles.css">
     <title>Checkout</title>
     <style>
         body {
@@ -82,30 +82,29 @@
     </main>
 
     <div class="container">
-        <div>
-            <form id="checkoutForm" onsubmit="return validateForm()">
-                <div>
-                    <h2>收件人資訊</h2>
-                    <div class="firstRow">
-                        <div class="Name">
-                            <label for="name" class= "form-label">收件人姓名</label>
-                            <span class="text-danger">*</span>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="Phone">
-                            <label for="phone" class= "form-label">收件人電話</label>
-                            <span class="text-danger">*</span>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="Email">
-                            <label for="email" class= "form-label">收件人信箱</label>
-                            <span class="text-danger">*</span>
-                            <input type="text" id="email" name="email" required>
-                        </div>
+        <form id="checkoutForm" onsubmit="return validateForm()">
+            <div>
+                <h2>收件人資訊</h2>
+                <div class="firstRow">
+                    <div class="Name">
+                        <label for="name" class= "form-label">收件人姓名</label>
+                        <span class="text-danger">*</span>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="Phone">
+                        <label for="phone" class= "form-label">收件人電話</label>
+                        <span class="text-danger">*</span>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="Email">
+                        <label for="email" class= "form-label">收件人信箱</label>
+                        <span class="text-danger">*</span>
+                        <input type="text" id="email" name="email" required>
                     </div>
                 </div>
-            </form>
-        </div>
+                <button type="submit">Place Order</button>
+            </div>
+        </form>
     </div>
     <div class="container">
         <form id="checkoutForm" onsubmit="return validateForm()">
@@ -166,8 +165,8 @@
         }
     </script>
 
-<div class="footer">
-    <!-- 放Footer -->
-</div>
+    <div class="footer">
+        <!-- 放Footer -->
+    </div>
 </body>
 </html>
