@@ -87,24 +87,10 @@
                     <h2>收件人資訊</h2>
                     <div class="firstRow">
                         <div class="Name">
-                            <label for="name">收件人姓名</label>
-                            <span class="text-danger">*</span>
-                            <input type="text" id="name" required>
-                        </div>
-                        <div class="Phone">
-                            <label for="phone">收件人電話</label>
-                            <span class="text-danger">*</span>
-                            <input type="tel" id="phone" required>
-                        </div>
-                        <div class="Email">
-                            <label for="email">收件人信箱</label>
-                            <span class="text-danger">*</span>
-                            <input type="email" id="email" required>
+                            <div id="confirmationOutput"></div>
                         </div>
                     </div>
                 </div>
-                <script src="/Users/fletcherwu/MeowMaster/checkOut.js"></script>
-                <button type="submit" >Submit</button>
             </form>
         </div>
     </div>
@@ -132,19 +118,6 @@
             </div>
             <div class="error-message" id="errorMessage"></div>
         </form>
-    </div>
-    <div class="container">
-        <div>
-            <form id="checkoutForm3" onsubmit="saveAndRedirect()">
-                <div>
-                    <h2>付款方式</h2>
-                    <div>
-                        <div>貨到付款</div>
-                        <div>收貨時以現金付款給黑貓送貨大哥就可以囉！請確認電話、地址與到貨時段是否填寫正確</div>
-                    </div>
-                </div>
-            </form>
-        </div>
     </div>
 
     <div class="cartWrap">
@@ -209,11 +182,7 @@
     </div>
 
     </div>
-    <div class="bottomWrap">
-    <button type="submit">上一步</button>
-    <button type="submit">下一步</button>
-    </div>
-    
+    <script src="/Users/fletcherwu/MeowMaster/confirmation.js"></script>
     
 
     <div class="footer">

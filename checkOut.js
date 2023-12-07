@@ -10,5 +10,5 @@ function saveAndRedirect() {
     localStorage.setItem("buyerEmail", email);
 
     // Redirect to the confirmation page
-    window.location.href = "/Users/fletcherwu/MeowMaster/pages/confirmation1.html";
+    window.location.href = "/Users/fletcherwu/MeowMaster/pages/confirmation2.html";
 }
