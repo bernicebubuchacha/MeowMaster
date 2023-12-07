@@ -51,3 +51,6 @@ footer#norepeat2 section img{
 footer#norepeat2 a>p, footer#norepeat2 address>p{
     text-align: left !important
 }
+footer#norepeat2 address{
+    font-style: normal;
+}
