@@ -1,0 +1,39 @@
+footer{
+    background-color: #F2F2F2;
+    border-top: 1px solid #9E9E9E;
+    padding: 64px 0 64px;
+}
+footer main{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 64px;
+}
+footer>p{ text-align: center; }
+footer a{ display: block; }
+footer>a{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+footer section{
+    text-align: left;
+    vertical-align: top;
+}
+footer section>p{
+    margin-bottom: 20px;
+    text-align: center;
+}
+footer section a>p{
+    vertical-align: bottom;
+}
+footer section>a:hover p{
+    color: #9E9E9E;
+}
+footer a+a, footer main address+address{
+    margin-top: 12px;
+}
+footer section img{
+    display: inline-block;
+    margin-right: 12px;
+    vertical-align: middle;
+}

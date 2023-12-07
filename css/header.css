@@ -1,0 +1,92 @@
+header{
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    background-color: #F9F9F9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4.894833%;
+    box-sizing: border-box;
+}
+header a{
+    display: block;
+}
+header img{
+    vertical-align: middle;
+}
+header nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 40px;
+}
+header nav a{
+    margin: 24px 24px;
+}
+header nav a:hover{
+    color: #9E9E9E;
+}
+header .icon{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+header .icon a:first-of-type{
+    border: 1px solid #91A07B;
+    border-radius: 100px;
+    margin-right: 16px;
+    padding: 12px 24px;
+    color: #91A07B;
+}
+header .icon a:first-of-type:hover{
+    border: 1px solid #D6DECF;
+    color: #D6DECF;
+}
+header .icon img:last-of-type{
+    display: none;
+}
+header .icon a:last-of-type:hover img:first-of-type{
+    display: none;
+}
+header .icon a:last-of-type:hover img:last-of-type{
+    display: block;
+}
+
+/* fixed & sticky */
+div.wrap{
+    display: block;
+    position: fixed;
+    right: 8px;
+    bottom: 140px;
+    align-items: center;
+    z-index: 999;
+}
+div.wrap>a{
+    display: block;
+    margin: auto;
+}
+div.wrap>a+a{
+    margin-top: 24px;
+}
+div.wrap img{
+    display: block;
+    margin: auto;
+}
+
+@keyframes tada{0%{-webkit-transform:scaleX(1);transform:scaleX(1)}10%,20%{-webkit-transform:scale3d(.9,.9,.9) rotate(-3deg);transform:scale3d(.9,.9,.9) rotate(-3deg)}30%,50%,70%,90%{-webkit-transform:scale3d(1.1,1.1,1.1) rotate(3deg);transform:scale3d(1.1,1.1,1.1) rotate(3deg)}40%,60%,80%{-webkit-transform:scale3d(1.1,1.1,1.1) rotate(-3deg);transform:scale3d(1.1,1.1,1.1) rotate(-3deg)}to{-webkit-transform:scaleX(1);transform:scaleX(1)}}.animate__tada{-webkit-animation-name:tada;animation-name:tada}
+
+div.wrap>a:first-of-type:hover img{
+    animation: tada 1.75s ease-in ;
+}
+div.wrap>a:first-of-type:hover p{
+    color: #D9BF84;
+}
+div.wrap>a:last-of-type:hover img{
+    content: url('../pic/gototop_hover.png');
+}
+#goToTopBtn{
+    display: none;
+}
