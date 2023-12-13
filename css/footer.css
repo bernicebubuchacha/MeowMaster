@@ -30,7 +30,7 @@ footer#norepeat2 section{
     text-align: left;
     vertical-align: top;
 }
-footer#norepeat2 section>p{
+footer#norepeat2 section p{
     margin-bottom: 20px;
     text-align: center;
 }
@@ -49,5 +49,8 @@ footer#norepeat2 section img{
     vertical-align: middle;
 }
 footer#norepeat2 a>p, footer#norepeat2 address>p{
-    text-align: left !important
+    text-align: left !important;
+}
+footer#norepeat2 address>p{
+    font-style: normal;
 }
