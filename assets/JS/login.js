@@ -2,10 +2,10 @@ const register=document.querySelector(".register");
 const login=document.querySelector(".login");
 
 register.addEventListener("click",function(e){
-    window.location.href = "http://localhost:8080/pages/signup.html";
+    window.location.href = "signup.html";
 })
 login.addEventListener("click",function(e){
-    window.location.href = "http://localhost:8080/pages/login.page.html";
+    window.location.href = "login.page.html";
 })
 
 // let newData=[];
@@ -38,7 +38,7 @@ function logIn(){
         console.log(response.data);
         localStorage.setItem("token",response.data.accessToken);
         alert("登入成功");
-        window.location.href = "signupsuccess.html";
+        window.location.href = "index.html";
     })
     .catch(function(error){
         console.log(error.response);
